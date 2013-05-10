@@ -22,6 +22,9 @@
 	define('FILE_PERMISSIONS', 0777);
 	define('DIR_PERMISSIONS', 0777);
 
+    // Added to fix the error in PHP 5.4.7
+    ini_set('display_errors', 0);
+	error_reporting('E_NONE');
 	
 	// first some webserver setup...
 	
