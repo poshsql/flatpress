@@ -1,0 +1,269 @@
+/*------------------------------------------------------------------
+===================
+f!uXish CSS Styles
+===================
+common style sheet
+-------------------
+
+Author: f!uX
+
+[Typography]
+
+Body:		    100% 'Bitstream Vera Sans', 'Liberation Sans', FreeSans, 
+                    Helvetica, Arial, sans-serif;
+Headers:		2em/1em font-family: as body
+Paragraph:      92.5% font-family: as body, justify
+Blockquotes:    100% font-family: as body
+Preformatted:   100% "Bitstream Vera Mono", "Liberation Mono", FreeMono, 
+                    "Lucida Console", Monaco, monospace;
+
+td, th:         0.8em, font-family: as body
+th:             style: italic
+
+ul              type: square
+
+Notes:	decreasing heading by 0.5em with every subsequent heading level
+-----------------------------------------------------------------------*/
+
+html { font-size: 100.01% }
+
+body {
+    font-size: 1em;
+	font-family: 'Bitstream Vera Sans', 'Liberation Sans', FreeSans, 
+	    Verdana, Helvetica, sans-serif;
+}
+
+/* === HEADERS TAGS === */
+
+h1 {
+	font-size: 2em;
+	letter-spacing: 1px;
+	margin: 25px 0 15px;
+}
+    /* blog title */
+    h1.title{ 
+       margin-top: 5px;
+       font-size: 1.8em;
+    }
+
+h2 {
+	font-size: 1.5em;
+	margin: 20px 0 10px;
+}
+    /* blog subtitle or description */
+    h2.subtitle{
+        margin-top: 0;
+        font-size: 0.85em;
+        font-weight: normal;
+        font-style: italic;
+    }
+
+h3 {
+    font-size: 1.2em;
+	margin: 15px 0 5px;
+}
+
+h4 { 
+    font-size: 1em;
+    margin: 20px 0 2px;
+}
+    /* column widget title*/
+    .column h4, .bar h4{ font-size: 13px; }
+
+/* === PARAGRAPHS === */
+
+p {
+    font-size: 82.5%;
+    line-height: 1.4em;
+}
+
+#main p {
+    margin-top: 1.2em;
+    text-align: justify;
+}
+
+/* blog footer description */
+#footer p.description { padding-top: 3px; font-size: 92.5%; }
+
+/* theme footer description*/
+#footer p.theme { margin-top: 10px; }
+
+
+/* === LINKS === */
+
+a:link, a:visited, a:hover {
+	text-decoration: none;
+}
+
+#main a:link, #main a:visited {
+	border-bottom: 1px dotted;
+}
+
+#main h3 a:link, #main h3 a:visited {
+	border-bottom: none;
+}
+
+
+/* === BLOCKQUOTE AND CODE TEXT === */
+
+blockquote {
+	width: 90%;
+	margin: 1em;
+	padding: 0 10px;
+	border-left: 5px solid;
+}
+
+pre, code {
+	font-family: "Bitstream Vera Mono", "Liberation Mono", FreeMono, 
+	    "Lucida Console", Monaco, monospace;
+	font-size: 100%;
+}
+
+pre {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	
+	overflow: auto;
+	width: 90%;
+	margin: 1em;
+	padding: 5px 10px;
+}
+
+
+/* ===== TABLES ===== */
+
+table { border-collapse: collapse }
+
+td {
+    padding: 4px;
+	border-bottom: solid 1px;
+	font-size: 0.8em;
+	text-align: left;
+}
+
+th {
+    border-bottom: solid 2px;
+	padding: 4px;
+	font: 0.8em/0.8em italic;
+	text-align: left;
+}
+
+/* === LISTS === */
+
+ul { list-style-type: square; }
+
+ol { list-style-position: inside; }
+
+ul, ol { text-align: justify; font-size: 82.5%; line-height: 1.4em; }
+
+#main li { margin-left: 2em; }
+
+.column ul, .column ol, .bar ul, .bar ol{ font-size: 11px !important; }
+.column ul, .column ol, .bar ul, .bar ol{ font-size: 10px; } /* IE  */
+
+
+/* ===== DIV CONTAINER ALL ELEMENTS BLOCK ===== */
+
+/* === HEADER === */
+
+#head { text-align: left; }
+
+#header a { text-decoration: none; }
+
+#rss-menu h2{
+    border-bottom: solid 1px;
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom:10px;
+    padding: 6px 0px;
+}
+
+/* === MAIN === */
+
+/* +++ Entry +++ */
+
+/* entry info */
+#main ul.entry-info li {
+    margin: 0; 
+	display: block;
+    line-height: 1.5em;
+    font-size: 92.5%;
+}
+#entry_subheader li{ text-align: left; }
+#entry_footer li{ text-align: right; }
+
+/* [edit] and [delete] */
+.admincontrols { 
+    display: inline;
+    /*font-size: 80%;*/
+    font-weight: bold;
+}
+
+.buttonbar { text-align: center }
+
+.buttonbar input {
+	text-align: center;
+}
+
+h2.date {
+	font-size: 80%;
+}
+
+/* date under titles of the entry */
+.date { 
+	font-size: 80%;
+	font-style: italic;
+}
+
+div.entry_date {
+    font-size: 82.5%;
+    text-align: center;
+    line-height: 1.6em;
+    padding: 3px;
+    width: 70px;
+    border: 1px dashed #d3d3d3;
+}
+
+    div.entry_date .day{ 
+        font-weight: bold;
+        font-size: 1em;
+        font-style: italic; 
+    }
+    div.entry_date .day_month{
+        font-weight: bold;
+        font-size: 2.5em; 
+    }
+    div.entry_date .month{
+        font-weight: bold;
+        font-size: 1em; 
+    }
+    div.entry_date .year{ 
+        font-weight: bold;
+        font-size: 0.8em; 
+        line-height: 1em;
+    }
+    
+/* +++ Comments +++ */
+
+#comments li.comment-admin strong.comment-name { font-size:140% }
+
+/* === NAVIGATION === */
+
+.column div, .column p, .column em,
+.bar div, .bar p{ font-size: 11px !important; }
+.column div, .column p, .column em,
+.bar div, .bar p{ font-size: 10px; } /* IE */
+
+.navigation { font-size: 82.5%; }
+
+/* === FOOTER === */
+
+#foot {
+	font-size: 100%;
+	text-align: center;
+}
+
+#footer {
+	font-size: 80%;
+}

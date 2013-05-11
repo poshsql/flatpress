@@ -1,0 +1,188 @@
+/*
+===================
+Leggero CSS Styles
+===================
+Ispired by: http://pluxml.org theme default
+-------------------
+
+Name: Leggero
+Author: NoWhereMan & drudo
+Version: 0.1
+Module: admin.css
+*/
+
+@import url(common.css);
+@import url(globals.css);
+
+
+/* ===== HEADERS TAGS ===== */
+h1 { font-family:'book antiqua', georgia, garamond, times, 'times new roman', serif }
+
+.title {
+	font-family: Verdana, sans-serif;
+	color: #682;
+}
+
+/* === Conflict with inner h1 === */
+#admin-content h1 { color: black }
+
+
+
+/* DIV CONTAINER ALL ADMIN DIV BLOCK */
+#cpmain { padding: 10px }
+
+
+
+/* ===== SMALL NAVBAR (home and logout links) ===== */
+ul#admin-small-nav {
+	font-size: 80%;
+	float: right;
+	list-style-type: none
+}
+
+ul#admin-small-nav li { display: inline; margin: 5px }
+
+
+
+/* ===== TAB MENU ===== */
+ul#admin-tabmenu {
+	text-align: center;
+	margin: 1em 0 0 0;
+	padding: .5em;
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #bbb
+}
+
+ul#admin-tabmenu li {
+	display: inline;
+	font-size: 85%;
+	font-weight: normal;
+	text-decoration: none
+}
+
+ul#admin-tabmenu li a {
+	color: #222;
+	line-height: 2em;
+	font-weight: normal;
+	text-decoration: none;
+	padding: 0.5em;
+	background-color: #fff
+}
+
+ul#admin-tabmenu li a:hover {
+	color: black;
+	font-weight: normal;
+	background-color: #C8EA65;
+}
+
+ul#admin-tabmenu a#admin-tab-current {
+	font-weight: bold;
+	background-color: #C8EA65;
+}
+
+
+
+/* ===== MAIN MENU ITEM ===== */
+#admin-content { padding: 1em }
+
+.admin-mainmenu-item {
+	display: block;
+	padding: 1em;
+	clear: both
+}
+
+.admin-mainmenu-item img { padding-right: 1em }
+
+.admin-mainmenu-item .admin-icon-descr {
+	font-size: 80%;
+	font-style: italic
+}
+
+
+
+/* ===== ADMIN ENTRY ===== */
+input#subject {
+	width: 100%;
+	font-size: 1.3em;
+	color: #333333;
+	font-weight: bold
+}
+
+textarea.code {
+	font-family: Lucida Console, Monaco, monospace;
+	font-size: 90%
+}
+
+#admin-entry-categories ul {
+	display:block;
+	list-style-type: none;
+	margin-right: 10px;
+	padding-left: 1em
+}
+
+#admin-bbcode-toolbar p { display: inline }
+
+#admin-bbcode-toolbar select { width: 10em }
+
+
+
+/* #admin-content { background: url(../images/fp-logo.png) bottom right no-repeat } */
+
+#admin-content table { width: 100%; border-collapse: collapse }
+
+#admin-content td {
+	width: 8px;
+	font-size: 0.8em;
+	padding: 4px;
+	border-bottom: solid 1px black
+}
+
+#admin-content td.main_cell {
+	width: 30%;
+	text-align: left;
+	font-weight: bold
+}
+
+#admin-content th {
+	font-size: 0.75em;
+	font-style: italic;
+	border-bottom: solid 2px black;
+	padding: 4px
+}
+
+input.maxsize, select.maxsize { width: 100% }
+
+#admin-bbcode-toolbar {
+	margin: 0;
+	padding: 0;
+	padding-right: 0.7%;
+	border: none
+}
+
+#admin-bbcode-toolbar legend { display: none }
+
+#admin-content ul { margin-left: 2em }
+
+
+
+/* ===== PREVIEW SETTINGS ===== */
+#post-preview .entry { padding: 2em }
+
+#post-preview ul { list-style: none; padding: 0 0 0 1.6em }
+
+#post-preview ul li:before { content: "\00BB \0020" }
+
+#post-preview  ol { list-style-position: inside; Padding: 0 1.6em 0 1.6em }
+
+
+
+
+/* ===== NOTIFICATIONS ===== */
+.draft { background-color: lightgrey }
+
+/* (already defined in common, here we put just some tuning settings) */
+#admin-content ul.msgs {
+	margin-left: 0em;
+	margin-bottom: 2em;
+	padding: 1em 2em
+}

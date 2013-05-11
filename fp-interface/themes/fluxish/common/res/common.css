@@ -1,0 +1,87 @@
+/*
+
+===================
+f!uXish CSS Styles
+===================
+based on Leggero by NoWhereMan & drudo
+-------------------
+
+Name: f!uXish
+Author: f!uX
+Version: 1.0
+Module: common.css
+
+*/
+
+
+hr { display: none }
+
+img { border: none }
+
+
+/* ===== main ===== */
+
+#main img { margin: .5em }
+
+/* === List === */
+	
+	#commentform {
+	    margin-top: 20px;
+	}
+	
+	#commentform fieldset p, #contactform fieldset p { margin: 0 0 .5em }
+	
+	#commentform fieldset textarea, #contactform fieldset textarea  { 
+		margin-right: -1px; /* fix IE */
+	}
+	
+	#comments li {
+		margin: 0 0 1.5em 0;
+		padding: 5px;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		background: #efefef;
+	}
+	
+	#comments li.comment-admin {
+	    background-color: #e5f79c;
+	    border-top: 1px solid #99cc33;
+        border-bottom: 1px solid #99cc33;
+	    padding:1em;
+    }
+	
+	/* === Class of main block === */
+	
+	.date { /* date under titles of the entry */
+		margin: .2em 0 .8em 0;
+	}
+	
+	.entry {
+		margin: 0 0 2em 0;
+		padding-right: 10px;
+		overflow: hidden; /* floating images fix */
+		height:1%; /* i.e. hack*/
+		text-align: justify;
+	}
+	
+	#main>.entry {
+		overflow: hidden; /* rest of the world :) */
+	}
+	
+	div.entry_date {
+        float: right;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+	
+	#main .entry-info{
+		margin: 1em 0 .5em 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	
+	.buttonbar input {
+		margin: .1em .5em;
+		padding: 0 1em
+	}
+

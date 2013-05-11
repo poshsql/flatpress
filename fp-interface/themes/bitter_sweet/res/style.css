@@ -1,0 +1,316 @@
+/*#############################################################
+Name: Bitter Sweet
+Date: 2006-10-02
+Description: Lime flavoured template with two columns.
+Author: Viktor Persson
+URL: http://templates.arcsin.se
+
+Feel free to use and modify but please provide credits.
+#############################################################*/
+
+/* standard elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #682;
+}
+a:hover {color: #9A6;}
+body {
+	background: #5F8000 url(../img/bg.gif) repeat-y center top;
+	color: #333;
+	font: normal 62.5% "Lucida Sans Unicode",sans-serif;
+}
+input, textarea {
+	color: #555;
+	font: normal 1.1em "Lucida Sans Unicode",sans-serif;
+	border: 1px solid #81ac00; /* #567300; */
+	background-color: #F9FEF6;
+}
+input:hover, input:focus, textarea:hover, textarea:focus {
+	background-color: #fff;
+	border-color: #A7DF00;
+}
+p,cite,code {
+	font-size: 1.2em;
+	padding-bottom: 1.2em;
+}
+ul {
+	margin-left: 1.2em;
+	font-size: 12px;
+}
+li {list-style-image: url(../img/li.gif);}
+h1 {font-size: 1.4em;}
+blockquote {
+	background: #FFF;
+	border-bottom: 1px solid #EEE;
+	border-top: 1px solid #EEE;
+	color: #333;
+	display: block;
+	font-size: 0.9em;
+	margin-bottom: 1.2em;
+	padding: 6px 12px;
+}
+blockquote p {padding: 3px 0;}
+h1,h2,h3 {color: #654;}
+
+/* misc */
+.clearer {clear: both;}
+
+/* structure */
+.container {
+	background: url(../img/bgcontainer.gif) repeat-y;
+	margin: 0 auto;
+	width: 702px;
+}
+
+/* top */
+.top {
+	background: #567300;
+	font: normal 2.4em Verdana,sans-serif;
+	height: 60px;
+	margin: 0 auto;
+	width: 630px;
+}
+.top a {
+	color: #FFF;
+	display: block;
+	line-height: 60px;
+	text-decoration: none;
+	width: 100%;
+}
+.top span {padding-left: 24px;}
+.top a:hover {
+	background: #688B00;
+	color: #FFF;
+}
+
+/* header */
+.header {
+	background: url(../img/header.jpg) no-repeat;
+	height: 180px;
+	margin: 0 auto;
+	width: 630px;
+}
+
+/* item */
+.item {clear: both;}
+.item .date {
+	background: url(../img/bgdate.gif) no-repeat;
+	color: #FDD;
+	float: left;
+	height: 40px;
+	text-align: center;
+	width: 36px;
+}
+.item .date div {padding-top: 4px; text-transform: uppercase;}
+.item .date span {font: normal 1.6em serif;}
+.item .content {
+	float: left;
+	width: 420px;
+}
+.item h1 {
+	background: #567300;
+	color: #FFF;
+	line-height: 40px;
+	padding-left: 16px;
+}
+.item .body {padding: 12px 18px;}
+
+/* main */
+.main {float: left;}
+
+/* navigation */
+.navigation {
+	float: left;
+	margin-left: 1px;
+	width: 208px;
+}
+.navigation h1 {
+	background: #81AC00;
+	color: #FFF;
+	font-size: 1.3em;
+	line-height: 40px;
+	padding-left: 12px;
+}
+.navigation ul {margin: 0; padding: 0;}
+.navigation li {
+	border-top: 1px solid #D5E8AD;
+	list-style: none;
+}
+.navigation li a {
+	background: #E8F6BF url(../img/bgnavigation.gif) repeat-x;	
+	color: #553;
+	display: block;
+	padding: 8px 4px 8px 12px;
+	text-decoration: none;
+}
+.navigation li a:hover {
+	background: #F0FFC6;
+	color: #553;
+}
+#widget-lastentries li {
+	background: #E8F6BF url(../img/bgnavigation.gif) repeat-x;
+}
+#widget-lastentries li a{
+	display: inline;
+	line-height: 32px;
+}
+
+/* footer */
+.footer {
+	background: url(../img/bgfooter.gif) repeat-x #8BBE2E;
+	color: #FFF;
+	font-size: 1.1em;
+	line-height: 30px;
+	margin: 0 auto;
+	text-align: center;
+	width: 626px;
+}
+.footer a {color: #FFF;}
+.footer a:hover {color: #FAFCB0;}
+
+
+
+
+/***	FLATPRESS	***/
+
+#subtitle {
+	text-align:center;
+	font-size: 1.0em;
+	background-color: #81AC00;
+	color:#fff;
+	width:630px;
+	margin:0pt auto;
+	padding-bottom: 2px;
+	border-top:1px solid #D5E8AD;
+}
+
+.content h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.content h1 a:hover {
+	text-decoration: underline;
+}
+
+img.floatleft {
+	padding-right: 0px !important;
+	margin-right: 10px;
+}
+
+img.floatright {
+	padding-left: 0px !important;
+	margin-left:10px;
+}
+
+.item .static-content {
+	float: left;
+	margin-left:36px;
+	width: 420px;
+}
+
+pre {
+	font-size: 1.5em;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	display: block;
+	margin-bottom: 1.2em;
+	padding: 6px 12px;
+	overflow: auto;
+	background-color: #ffee88;
+}
+
+.entry-footer {
+	text-align:right;
+	padding:5px 10px;
+	font-style:italic;
+}
+
+#content {
+	width: 370px;
+}
+
+a img {
+	border: 2px solid #682;
+}
+
+a img:hover {
+	border: 2px solid #9a6;
+}
+
+.navigation p {
+	padding: 8px 4px 8px 12px;
+}
+
+.navigator, #comments-form {
+	float: left;
+	margin-left:36px;
+	width: 400px;
+	padding: 10px;
+}
+
+#comments {
+	float: left;
+/*	margin-left:37px; */
+	width: 456px;
+	font-size: 1.2em;
+}
+
+#comments .date {
+	background: url(../img/bgdate.gif) no-repeat;
+	color: #FDD;
+	float: left;
+	height: 40px;
+	text-align: center;
+	width: 36px;
+	font-size: 10px;
+}
+#comments .date div {padding-top: 4px; text-transform: uppercase;}
+#comments .date span {font: normal 1.6em serif;}
+
+.comm1, .comm2 {
+	width: 399px;
+	min-height: 80px;
+	margin-left:1px;
+	float:left;
+	padding: 10px;
+	font-size: 0.8em;
+}
+
+.comm1 {
+	background-color: #E8F6BF;
+}
+
+/* #comments .content div {
+	min-height: 80px;
+	padding: 10px;
+} */
+
+#comments div .cmt-gravatar {
+	border: 3px solid #668822;
+	float: right;
+	margin-left: 12px;
+}
+#comments div .admincontrols {
+	float: right;
+}
+
+#comments div .comment-name {
+	padding-bottom: 10px;
+	font-size: 1.2em;
+}
+
+#comments-form h4 {
+	font-size: 1.4em;
+}
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}

@@ -1,0 +1,136 @@
+/*------------------------------------------------------------------
+===================
+fluxish CSS Styles
+===================
+
+Author: f!uX 
+
+[Colors]
+
+Body
+Background:	#7f7f7f (white)
+Foreground: #000000 (black)
+
+a (standard):	#666666 (dark gray)
+a (visited):	#666666 (dark gray)
+a (hover):	    #d3d3d3 (light gray)
+
+td, th: border-bottom-color: #000000 (black)
+
+-------------------------------------------------------------------*/
+
+body {
+	background-color: #7f7f7f;
+	color: black;
+}
+
+/* === HEADERS === */
+
+#header h1.title{ color: #ffffff; }
+
+#rss-menu h2{ border-bottom: #cccccc; color: #000000; }
+
+
+/* ===== LINKS ===== */
+a:link, a:visited {
+	color: #666666;
+}
+
+a:hover {
+	color: #d3d3d3;
+}
+
+#header h1.title a:link, h1.title a:visited { color: #ffffff; }
+
+#main h3 a:hover {
+	color: #999999;
+	border-bottom-color: #999999;
+}
+
+#main a:link, #main a:visited {
+	border-bottom-color: #666666;
+}
+
+#main a:hover {
+	border-bottom-color: #d3d3d3;
+}
+
+#footer a:link, #footer a:visited {
+    color: #a8a8a8;
+	border-bottom: 1px dotted #a8a8a8;
+}
+
+#footer a:hover {
+    color: #fafafa;
+	border-bottom: 1px dotted #fafafa;
+}
+
+
+/* === TABLE === */
+
+td {
+	border-bottom-color: #000;
+}
+
+th {
+    border-bottom-color: #000;
+}
+	
+
+/* === LAYOUT === */
+
+/* +++ body +++ */
+
+#body-container { background: #7f7f7f url('../imgs/back.jpg') repeat-y center center; }
+
+/* +++ main +++ */
+
+#main img { margin: .5em }
+
+/* +++ comments +++ */
+
+    #main ul.entry-info{		
+		color: #666666;
+	}
+	
+	#comments li {
+		border-top-color: #ddd;
+		border-bottom-color: #ddd;
+		background: #efefef;
+	}
+	
+	#comments li.comment-admin {
+	    background-color: #d3d3d3;
+	    border-top-color: #666666;
+        border-bottom-color: #666666;
+	    padding:1em;
+    }
+	
+	/* === date === */
+	
+	h2.date {
+		color: #aaa;
+	}
+	
+	.date { /* date under titles of the entry */
+		color: #666666;
+	}
+	
+	.entry_date {
+        color: #666;
+    }
+
+/* +++ footer +++ */
+
+#foot { background: #7f7f7f url('../imgs/footer-back.jpg') repeat-y center bottom; }
+
+#footer { 
+    color: #fff;
+    background: #7f7f7f url('../imgs/footer.jpg') no-repeat center center; 
+}
+
+
+
+/* ===  === */
+/* +++  +++ */
+

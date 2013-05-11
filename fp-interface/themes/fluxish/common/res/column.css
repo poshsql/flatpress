@@ -1,0 +1,134 @@
+/*
+
+===================
+f!uXish CSS Styles
+===================
+based on Leggero by NoWhereMan & drudo
+-------------------
+
+Name: f!uXish
+Author: f!uX
+Version: 1.0
+Module: column.css
+
+*/
+
+
+
+/* ===== COLUMN ===== */
+
+.column {
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+    .column h4 {
+	    /* Titles of the sections */
+	    margin-bottom: .5em;
+	    padding: 4px 10px;
+	    background: #b0d80f url('../imgs/header-back.jpg') repeat-x center top;
+    }
+
+    .column div, .column p{ padding: 10px 0; line-height: 1.2em; }
+
+    .column a:link, #column a:visited { color: gray }
+
+    /* === List === */
+
+    .column ul {
+	    list-style-type: none;
+	    margin-right: 5px;
+	    margin-bottom: .5em;
+	    padding-left: 1em;
+    }
+
+    .column fieldset { margin: 0 5px 0 5px }
+
+    .column input[type="text"] {
+        width: 100%;
+    }
+    
+#single_right_sidebar{ margin: 0; padding: 0; }
+
+
+/* ===== BARS ===== */
+
+#footerbar {
+	width: 100%;
+	clear: both;
+}
+
+.bar {
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+
+.bar h4 {
+	/* Titles of the sections */
+	margin-bottom: .5em;
+	padding: 4px 10px;
+	background: #b0d80f url('../imgs/header-back.jpg') repeat-x center top;
+	text-align: left;
+}
+
+.bar p, .bar div { padding: 10px 0; line-height: 1.2em; }
+
+#footerbar div {
+	color: #ffffff
+}
+
+#footerbar h4 {
+	background: none;
+}
+
+.bar a:link, #column a:visited { color: gray }
+
+/* === List === */
+
+.bar ul {
+	list-style-type: none;
+	margin-right: 5px;
+	margin-bottom: .5em;
+	padding-left: 1em
+}
+
+.bar fieldset { margin: 0 5px 0 5px }
+
+.bar input[type=text] {
+    width: 100%;
+}
+
+/* === NAVIGATION-BAR (next-prev posts links ) === */
+
+.navigation{ clear: both; margin-bottom: 60px;}
+
+/* === TOP-MENU === */
+
+.top-menu{ position: absolute; bottom: 0px;}
+
+.top-menu ul, .top-menu li{ list-style:none; }
+.top-menu ul{
+    height: 30px;
+    padding-left: 20px;
+}
+.top-menu li{ 
+    float: left; 
+    margin-right: 5px;
+    background: url(../imgs/tab-round.gif) right 30px;
+    /*width: 80px*/ /* only for IE... set a fixed width */
+}
+
+.top-menu li:hover {
+    background: url(../imgs/tab-round.gif) right 60px;
+}
+
+.top-menu li a:link, .top-menu li a:visited,
+.top-menu li a:hover{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+

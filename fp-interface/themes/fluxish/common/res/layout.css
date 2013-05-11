@@ -1,0 +1,74 @@
+/*-----------------------------------
+===================
+#title# CSS Styles
+===================
+#description#
+-------------------
+
+Author:  
+
+[Layout]
+
+* body
+    * Body container / #body-container
+    * Page / #page .container
+        + Header / #header
+            - Top header / #top_header
+            - Bottom header / #bottom_header
+            
+        + Middle / #middle
+            - Content / #content
+            - Right Sidebar / #right_sidebar in navigation.css
+            - Left Sidebar / #left_sidebar in navigation.css
+            
+        + Footer / #footer
+            - Top footer / #top_footer
+            - Bottom footer / #bottom_footer
+
+Navigation	  #top-mini in navigation.css
+Content header	  h2
+-------------------------------------*/
+
+
+/* === PAGE === */
+
+#page{ }
+
+.container{ padding: 0 15px; }
+
+/* === HEADER === */
+
+#head {
+    height: 230px;
+}
+
+#header {
+	height: 70px;
+	padding-top: 30px;
+}
+
+#sub_header{
+	height: 130px;
+	position: relative;
+}
+
+
+/* === MAIN === */
+
+#main{ }
+
+
+/* === FOOTER === */
+
+#foot {
+	clear: both;
+	height: 100%;
+}
+
+#footer {
+    position: relative;
+    clear: both;
+	height: 70px;
+	margin: 0 auto;
+	padding: 0px 50px 0px 50px;
+}

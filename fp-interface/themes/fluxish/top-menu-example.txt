@@ -1,0 +1,7 @@
+[html]
+<ul>
+<li><a href="index.php"><span>Home</span></a></li>
+<li><a href="contact.php"><span>Contacts</span></a></li>
+<li><a href="index.php?page=page1"><span>Link to a static page</span></a></li>
+</ul>
+[/html]

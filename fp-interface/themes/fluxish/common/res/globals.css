@@ -1,0 +1,317 @@
+/*
+
+===================
+f!uXish CSS Styles
+===================
+based on Leggero by NoWhereMan & drudo
+-------------------
+
+Name: f!uXish
+Author: f!uX
+Version: 1.0
+Module: globals.css
+
+*/
+
+
+
+.alignleft { float: left }
+
+.alignright { float: right }
+
+.top_link{
+    font-size: 0.5em;
+    padding-bottom: 0.2em;
+    float: right;
+}
+
+/* ===== MINI-ICONS ===== */
+
+.img_mini{
+    margin-right: -0.2em;
+    padding: 0.2em 0 0.2em 16px;
+}
+
+.edit-entry_mini{
+    background: url('../imgs/icons/edit-entry.gif') left center no-repeat;
+    border-style: none;
+}
+
+.delete-entry_mini{
+    background: url('../imgs/icons/delete-entry.gif') left center no-repeat;
+    border-style: none;
+}
+
+.delete-comment_mini{
+    background: url('../imgs/icons/delete-entry.gif') left center no-repeat;
+    border-style: none;
+}
+
+.add-comment_mini{
+    background: url('../imgs/icons/add-comment.gif') left center no-repeat;
+    border-style: none;
+}
+
+.posted-by_mini{
+    background: url('../imgs/icons/posted-by.gif') left center no-repeat;
+    border-style: none;
+}
+
+.permalink_mini{
+    background: url('../imgs/icons/permalink.gif') left center no-repeat;
+    border-style: none;
+}
+
+.view_mini{
+    background: url('../imgs/icons/view.gif') left center no-repeat;
+    border-style: none;
+}
+
+.category_mini{
+    background: url('../imgs/icons/category.gif') left center no-repeat;
+    padding-left: 16px;
+    height: 14px;
+    border-style: none;
+}
+
+/* ===== SOCIAL LINKS ===== */
+
+.img_link{
+    margin-right: -0.2em;
+}
+
+.delicious_link{
+    background: url('../imgs/icons/delicious.png') left center no-repeat;
+    padding-left: 14px;
+    border-style: solid;
+}
+
+.technorati_link{
+    background: url('../imgs/icons/technorati.gif') left center no-repeat;
+    padding-left: 14px;
+    border-style: none;
+}
+
+.stumbleupon_link{
+    background: url('../imgs/icons/stumbleupon.gif') left center no-repeat;
+    padding-left: 14px;
+    border-style: none;
+}
+
+.digg_link{
+    background: url('../imgs/icons/digg.png') left center no-repeat;
+    padding-left: 14px;
+    border-style: none;
+}
+
+.rss_link{
+    background: url('../imgs/icons/rss-mini.gif') left center no-repeat;
+    padding-left: 14px;
+    border-style: none;
+}
+
+.delicious-button{ cursor: pointer; }
+
+#item-delicious{
+    background: url('../imgs/icons/delicious-pocket.gif') no-repeat center bottom;
+    height: 70px;
+    width: 70px;
+}
+
+html>body #item-delicious{
+    background: url('../imgs/icons/delicious-pocket.png') no-repeat center bottom;
+}
+
+/* === FEED LINKS === */
+
+.rss-button{ cursor: pointer; }
+
+#item-rss{ height: 70px; width: 110px; }
+
+#rss-menu{
+    position: absolute;
+    top: 90px; margin-left: 650px; 
+	padding: 0 10px 10px;
+	margin-top: 10px;
+	width: 280px;
+	border: solid 1px #CCCCCC;
+	background-color: #fff;
+	z-index: 10;
+}
+	#rss-menu a:link, #rss-menu a:visited{
+		display: block;
+	}
+	
+	#rss-menu h2{
+	    border:0; margin:0;
+	    border-bottom:solid 1px #CCCCCC;
+	    color:#000000;
+	    display:block;
+	    font-weight:bold;
+	    font-size:12px;
+	    margin-bottom:10px;
+	    padding:6px 0px;
+	}
+	#rss-menu ul, #rss-menu ul li{
+		list-style: none;
+	}
+		#rss-menu ul li{
+			height: 20px;
+			text-indent: 104px;
+			margin-top: 3px;
+		}
+
+.feed-yahoo{
+    background: url(../imgs/icons/feed-yahoo.png) no-repeat;
+}
+.feed-newsgator{
+    background: url(../imgs/icons/feed-newsgator.png) no-repeat;
+}
+.feed-netvibes{
+    background: url(../imgs/icons/feed-netvibes.png) no-repeat;
+}
+.feed-bloglines{
+    background: url(../imgs/icons/feed-bloglines.png) no-repeat;
+}
+.feed-xml{
+    background: url(../imgs/icons/feed-xml.png) no-repeat;
+}
+.feed-google{
+    background: url(../imgs/icons/feed-google.png) no-repeat;
+}
+
+/* === LINKS TO FILES ICONS === */
+
+/* external link icon */
+
+a[href$=".ai"]{
+    background: url('../imgs/icons/illustrator-file.gif') right center no-repeat;
+    padding-right: 18px;
+}
+
+a[href$=".in"]{
+    background: url('../imgs/icons/indesign-file.gif') right center no-repeat;
+    padding-right: 18px;
+}
+
+a[href$=".mp3"], a[href$=".mp4"]{
+    background: url('../imgs/icons/mp3-file.gif') right center no-repeat;
+    padding-right: 18px;
+}
+
+a[href$=".ogg"]{
+    background: url('../imgs/icons/music.gif') right center no-repeat;
+    padding-right: 18px;
+}
+
+a[href$=".doc"], a[href$=".docx"]{
+    background: url('../imgs/icons/ms-word.gif') right center no-repeat;
+    padding-right: 18px;
+}
+
+a[href$=".pdf"]{
+    background: url('../imgs/icons/pdf.gif') right center no-repeat;
+    padding-right: 18px;
+}
+
+a[href$=".psd"]{
+    background: url('../imgs/icons/photoshop-file.gif') right center no-repeat;
+    padding-right: 18px;
+}
+
+a[href$=".txt"], a[href$=".css"]{
+    background: url('../imgs/icons/text-file.gif') right center no-repeat;
+    padding-right: 18px;
+}
+
+/*a[href$=".html"], a[href$=".xhtml"], a[href$=".php"]{
+    background: url('../imgs/icons/web-page.gif') right center no-repeat;
+    padding-right: 18px;
+}*/
+
+a[href$=".flv"], a[href$=".swf"]{
+    background: url('../imgs/icons/flash-file.gif') right center no-repeat;
+    padding-right: 18px;
+}
+
+a[href$=".wmv"], a[href$=".wma"]{
+    background: url('../imgs/icons/windows-media-file.gif') right center no-repeat;
+    padding-right: 18px;
+}
+
+a[href$=".zip"], a[href$=".rar"], a[href$=".7z"], 
+a[href$=".bz2"], a[href$=".gz"], a[href$=".tar"]{
+    background: url('../imgs/icons/windows-media-file.gif') right center no-repeat;
+    padding-right: 18px;
+}
+
+a[href$=".xls"]{
+    background: url('../imgs/icons/excel-file.gif') right center no-repeat;
+    padding-right: 18px;
+}
+
+a[href$=".exe"]{
+    background: url('../imgs/icons/exe-file.gif') right center no-repeat;
+    padding-right: 18px;
+}
+
+a[href$=".odf"], a[href$=".ods"], a[href$=".odp"], a[href$=".odg"]{
+    background: url('../imgs/icons/file.gif') right center no-repeat;
+    padding-right: 18px;
+}
+
+/* === TOOLTIPS === */
+
+.tool-tip{
+    border: 1px dashed #ffffff;
+    padding: 3px;
+
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 85%;
+}
+
+.tool-title{
+    display: none;
+}
+
+/* ===== NOTIFICATION ===== */
+#main ul.msgs, ul.msgs {
+	margin-top: 1em;
+	margin-left: 0em;
+	padding: 1em 2em
+}
+
+.errors {
+	color: #901d1d;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #ffbbbb;
+	background: #ffdddd
+}
+
+.errors a {
+	color: #901d1d;
+	text-decoration: underline;
+	font-weight: normal
+}
+
+.notifications {
+	color : #1d901d;
+	border-top: 1px solid #bbffbb;
+	border-bottom: 1px solid #bbffbb;
+	background: #ddffdd
+}
+
+.warnings {
+	color : #8a7802;
+	border-top: 1px solid;
+    border-bottom: 1px solid;
+	border-color: #f8e674;
+	background: #fffdd5;
+}
+
+.field-error {
+	border: red 1px solid;
+	background: #fdd
+}
